@@ -15,6 +15,7 @@
                 <h3>本文</h3>
                 <p class='body'>{{ $post->body }}</p>
             </div>
+            <a href="/categories/{{ $post->category->id }}">{{ $post->category->name }}</a>
         </div>
         <div class="edit">
             <a href="/posts/{{ $post->id }}/edit">edit</a>
